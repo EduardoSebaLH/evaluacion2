@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'MenuController@index') ;
 
 Route::get('/sesion', 'SesionController@index');
 Route::get('/menu', 'MenuController@index');
@@ -24,4 +22,4 @@ Route::get('/asignar', 'AsignarController@index');
 Route::get('/consultar', 'ConsultarController@index');
 Route::get('/eliminar', 'EliminarController@index');
 Route::get('/actualizar', 'ActualizarController@index');
-// Route::resource('/registrar', 'ProductosController::class');
+Route::resource('/registrar', 'ProductosController::class');

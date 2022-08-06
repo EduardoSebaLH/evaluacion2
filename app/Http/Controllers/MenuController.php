@@ -10,4 +10,8 @@ class MenuController extends Controller
   {
     return view('menu');
   }
+
+  public function create(){
+    return view('registrar');
+}
 }

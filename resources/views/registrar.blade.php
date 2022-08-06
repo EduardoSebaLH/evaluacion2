@@ -5,16 +5,17 @@
     <div class="modal-dialog text-center">
         <div class="col-sm-12">
             <div class="modal-content">
-                <form class="col-12" th:action="@{/login}" method="get">
+                <form class="col-12" action="" method="post">
                     <h4>Registrar producto</h4><br>
+                    @csrf
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Código del producto"><br>
+                        <input type="text" class="form-control" placeholder="Código del producto" id="codigoUnico" name="codigoUnico"><br>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Nombre del producto"><br>
+                        <input type="text" class="form-control" placeholder="Nombre del producto" id="nombre" name="nombre"><br>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Categoría"><br>
+                        <input type="text" class="form-control" placeholder="Categoría" id="categoria" name="categoria"><br>
                     </div>
                     <div class="form-group">
                         <select class="form-select">
@@ -25,14 +26,14 @@
                         </select><br>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Descripción"><br>
+                        <input type="text" class="form-control" placeholder="Descripción" id="desc" name="desc"><br>
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <input type="text" class="form-control" placeholder="Cantidad"><br>
                     </div>
                     <div class="form-group">
                         <input type="text" class="form-control" placeholder="Precio venta"><br>
-                    </div>
+                    </div> -->
                     <button type="submit" href="http:/menu" class="btn btn-primary"> Registrar </button>
                 </form>
                 </div>

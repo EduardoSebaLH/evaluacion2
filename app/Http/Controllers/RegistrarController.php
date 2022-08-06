@@ -10,4 +10,8 @@ class RegistrarController extends Controller
   {
     return view('registrar');
   }
+
+  public function create(){
+    return view('registrar');
+  }
 }

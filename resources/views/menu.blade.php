@@ -18,3 +18,7 @@
         </div>
 </div>
 @stop
+
+@section('footer')
+    <a hrefs="/productos/create" type="button"  class="btn btn-success"> Registrar  producto </a> <br><br>
+@stop   
